@@ -1,11 +1,11 @@
 :root {
-  --ifm-color-primary: #69b1ff;
-  --ifm-color-primary-dark: #4096ff;
-  --ifm-color-primary-darker: #1677ff;
-  --ifm-color-primary-darkest: #0958d9;
-  --ifm-color-primary-light: #91caff;
-  --ifm-color-primary-lighter: #bae0ff;
-  --ifm-color-primary-lightest: #e6f4ff;
+  --ifm-color-primary: #3491FA;
+  --ifm-color-primary-dark: #206CCF;
+  --ifm-color-primary-darker: #114BA3;
+  --ifm-color-primary-darkest: #063078;
+  --ifm-color-primary-light: #57A9FB;
+  --ifm-color-primary-lighter: #7BC0FC;
+  --ifm-color-primary-lightest: #9FD4FD;
   --ifm-code-font-size: 95%;
   --ifm-font-family-base: "Raleway", "PingFang SC", "Microsoft Yahei",
     sans-serif;
@@ -97,7 +97,7 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 
 .navbar__items .button__rfpro:hover {
   color: #fff;
-  background: #cc005b;
+  background: var(--ifm-color-primary);
 }
 
 .navbar__items .navbar__link,

@@ -1,4 +1,3 @@
-import { loadImage } from './loadImage.js'
 import avatarImg from "@site/static/img/avatar.jpg";
 import maskImg from "@site/static/img/mask.png";
 
@@ -191,4 +190,14 @@ class WebGL {
 
     return this;
   }
+}
+
+function loadImage(path) {
+  return new Promise((resolve) => {
+    const image = new Image();
+    image.src = path;
+    image.onload = function () {
+      resolve(image);
+    };
+  });
 }

@@ -3,21 +3,11 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
+import { Carousel } from '@arco-design/web-react';
+import "@arco-design/web-react/dist/css/arco.css";
 import styles from './index.module.css';
 import { avatarAnimation } from '@site/src/utils/avatarAnimation.js';
-import ImageSlider from '../components/ImageSliders';
-
-import imgOne from '@site/static/img/1.jpg';
-import imgTwo from '@site/static/img/2.jpg';
-import imgThree from '@site/static/img/3.jpg';
-import imgFour from '@site/static/img/4.jpg';
-
-const slides = [
-  { url: imgOne },
-  { url: imgTwo },
-  { url: imgThree },
-  { url: imgFour },
-];
+import { images } from '@site/src/utils/images.js'
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -50,7 +40,26 @@ export default function Home() {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main className={clsx(styles.mainContent)}>
-        <ImageSlider slides={slides} />
+        <Carousel
+          autoPlay
+          animation='card'
+          showArrow='hover'
+          indicatorPosition='outer'
+          style={{ width: '100%', height: 240 }}
+        >
+          {images.map((img, index) => (
+            <div
+              key={index}
+              style={{ width: '60%' }}
+            >
+              <img
+                src={img.src}
+                style={{ width: '100%' }}
+                alt={img.title}
+              />
+            </div>
+          ))}
+        </Carousel>
       </main>
     </Layout>
   );
