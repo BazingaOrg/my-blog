@@ -54,6 +54,10 @@ const config = {
         hideOnScroll: true,
         items: [
           {
+            type: 'search',
+            position: 'right',
+          },
+          {
             label: '学习',
             position: 'right',
             items: [
@@ -93,11 +97,11 @@ const config = {
         darkTheme: darkCodeTheme,
         defaultLanguage: 'javascript',
       },
-      // algolia: {
-      //   appId: 'EWQ8G6JEII',
-      //   apiKey: '9d81af4ac37ae0b39e29701cccc79ac1',
-      //   indexName: 'messiahhh',
-      // }
+      algolia: {
+        appId: 'EWQ8G6JEII',
+        apiKey: '143d49a996df477012e1ce2b43c84d47',
+        indexName: 'Bazinga',
+      }
     }),
 };
 
