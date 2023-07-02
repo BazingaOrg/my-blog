@@ -1,0 +1,31 @@
+.title {
+  font-size: 2.6rem;
+  letter-spacing: 0.5rem;
+  animation-name: text;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.wordSpan {
+  display: inline-block;
+  animation: 2.1s jump ease-in-out infinite;
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(-0.625rem);
+  }
+}
+
+@keyframes text {
+  30% {
+    letter-spacing: 1.25rem;
+  }
+  85% {
+    letter-spacing: 0.5rem;
+  }
+}

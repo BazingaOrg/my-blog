@@ -5,6 +5,9 @@ slug: /life
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import RangeSliderLife from '@site/src/components/RangeSliderLife';
+
+<RangeSliderLife />
 
 :::tip
 
