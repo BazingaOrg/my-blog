@@ -1,0 +1,64 @@
+.headerContainer {
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.headerAvatar {
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 50%;
+  animation-name: rotationCycle;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+@keyframes rotationCycle {
+  0% {
+    transform: rotate(-90deg) scale(0);
+  }
+  40% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(0deg) scale(1);
+  }
+  100% {
+    transform: rotate(90deg) scale(0);
+  }
+}
+
+.linkGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.linkIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkIcon:hover svg > path {
+  fill: var(--ifm-color-primary) !important;
+}
+
+.find {
+  font-size: 1.5rem;
+  margin: 0 1rem;
+}
+
+.skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: "underline";
+}

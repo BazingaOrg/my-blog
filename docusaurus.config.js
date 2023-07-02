@@ -51,7 +51,7 @@ const config = {
       },
       navbar: {
         title: "Bazinga的博客",
-        hideOnScroll: true,
+        hideOnScroll: false,
         items: [
           {
             type: 'search',
