@@ -8,7 +8,7 @@ const config = {
   favicon: 'img/favicon.ico',
   url: 'https://bazinga-blog.vercel.app/',
   baseUrl: '/',
-  organizationName: 'Bazinga',
+  organizationName: 'zhangyouxiu',
   projectName: 'my-blog',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
