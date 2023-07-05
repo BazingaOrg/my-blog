@@ -16,7 +16,7 @@ export default function HomeHeader({ title, words }) {
         <TitleEffect title={title} />
         <TypingEffect words={words} />
         <p className={styles.linkGroup}>
-          <Link className={styles.linkIcon} to="https://github.com/zhangyouxiu">
+          <Link className={styles.linkIcon} to="https://github.com/BazingaOrg">
             <GitHubIcon style={{ width: 30, height: 30 }} />
           </Link>
           <label className={styles.find}>👈 😀 👉</label>

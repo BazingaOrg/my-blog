@@ -1,7 +1,7 @@
 <p align="center">
   <a href="https://bazinga-blog.vercel.app/">
     <img alt="avatar" src="./static/img/avatar.jpg" width="100" />
-    <h1 align="center">Hi there 👋 I'm ZhangYouXiu</h1>
+    <h1 align="center">Hi there 👋 I'm Bazinga</h1>
     <h3 align="center">Make a little progress every day</h3>
   </a>
 </p>

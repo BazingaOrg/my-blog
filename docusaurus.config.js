@@ -8,7 +8,7 @@ const config = {
   favicon: 'img/favicon.ico',
   url: 'https://bazinga-blog.vercel.app/',
   baseUrl: '/',
-  organizationName: 'zhangyouxiu',
+  organizationName: 'BazingaOrg',
   projectName: 'my-blog',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -22,13 +22,13 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: 'https://github.com/zhangyouxiu/my-blog/blob/main/',
+          editUrl: 'https://github.com/BazingaOrg/my-blog/blob/main/',
           showLastUpdateTime: true,
         },
         blog: {
           showReadingTime: true,
           blogSidebarTitle: '全部博文',
-          editUrl: 'https://github.com/zhangyouxiu/my-blog/blob/main/',
+          editUrl: 'https://github.com/BazingaOrg/my-blog/blob/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -44,7 +44,7 @@ const config = {
     ({
       announcementBar: {
         id: 'support_me',
-        content: '⭐️ 如果这个网站能帮助到你，欢迎给一个star支持作者😀  <a target="_blank" rel="noopener noreferrer" href="https://github.com/zhangyouxiu/my-blog">GitHub</a>',
+        content: '⭐️ 如果这个网站能帮助到你，欢迎给一个star支持作者😀  <a target="_blank" rel="noopener noreferrer" href="https://github.com/BazingaOrg/my-blog">GitHub</a>',
         backgroundColor: '#fafbfc',
         textColor: '#091E42',
         isCloseable: true,
@@ -86,7 +86,7 @@ const config = {
           { to: 'docs/life/', label: '生活', position: 'right' },
           { to: '/blog', label: '博客', position: 'right' },
           {
-            href: 'https://github.com/zhangyouxiu',
+            href: 'https://github.com/BazingaOrg',
             label: 'GitHub',
             position: 'right',
           },
